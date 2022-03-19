@@ -1,0 +1,206 @@
+
+.containerMainLogin{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    position: absolute;
+    z-index: -1;
+    /* background-color: #67a6ea; */
+}
+.containerSections{
+    display: flex;
+    width: 65rem;
+    height: 48rem;
+    background-color: aliceblue;
+    border-radius: 2rem;
+    position: relative;
+    box-shadow: 0 0 25px  rgba(92, 99, 105, .6);
+}
+.link button{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    background-color: aliceblue;
+    border: 2px solid #1572A1;
+    color: #1572A1;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.link button:hover{
+    width: 12rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+/*----------------->>> Section Left <<<-------------------  */
+.containerLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: aliceblue;
+}
+.containerForm, .labels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.containerForm{
+    width: 80%;
+    padding: 0 1rem;
+    align-items: flex-start;
+}
+.logo{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, #e60fd4, #2196f3, #56db2d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -moz-background-clip: text;
+}
+.titleForm{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+    float: left;
+    color: #000;
+    position: relative;
+}
+.titleForm span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: aliceblue;
+    border-left: 1px solid #000;
+    animation: maquina 3s infinite alternate steps(21);
+}
+.containerButtonsSocial button{
+    width: 14.5rem;
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    margin: 0 1rem 1.5rem 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+.containerButtonsSocial button:hover{
+    font-weight: bold; 
+}
+#icon{
+    width: 6rem;
+    height: 100%;
+}
+.buttonGoogle{
+    border: 2px solid #D83A56;
+    color: #D83A56;
+}
+.buttonMeta{
+    border: 2px solid #185ADB;
+    color: #185ADB;
+}
+.labels{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 1rem 0 ;
+}
+.text{
+    /* margin-bottom: .3rem; */
+    font-size: 1.3rem;
+}
+.inputForm{
+    width: 90%;
+    height: 3rem;
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+    padding: 0 .5rem;
+}
+.containerButtonsSocial, .containerButtons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.containerButtons button{
+    width: 12rem;
+    height: 3.5rem;
+    border-radius: 5rem;
+    font-size: 1.3rem;
+    margin: 2rem 1rem 2rem 0;
+    cursor: pointer;
+    background: transparent;
+}
+.iniciarSesion{
+    border: 2px solid #D83A56;
+    color: #D83A56;
+}
+.crearUsuario{
+    border: 2px solid #185ADB;
+    color: #185ADB;
+}
+.containerButtons button:hover{
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: font-size 1s ease-in-out;
+}
+.spanRecuperar{
+    display: flex;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+.link{
+    margin-left: .5rem;
+    text-decoration: none;
+    color: #185ADB;
+}
+/*----------------->>> Section Rigth <<<-------------------  */
+.containerRigth{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    width: 43%;
+    height: 100%;
+    border-radius: 2rem;
+}
+/* .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0;
+} */
+.image{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Images/pexels-oladimeji-ajegbile-3207442.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+}
+/* ------------>> Aminations <<------------------ */
+@keyframes maquina {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}

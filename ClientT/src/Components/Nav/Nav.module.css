@@ -1,0 +1,137 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    background-color: #1572A1;
+}
+.font{
+    margin-right: 2rem;
+    color: rgb(243, 246, 247);
+    font-size: 2rem;
+}
+.logo{
+    margin-left: 4rem;
+    font-weight: bold;
+    color: rgb(243, 246, 247);
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+.logo:hover, .font:hover{
+    font-size: 2.5rem;
+}
+.underline{
+    text-decoration: none;
+}
+.underline:hover{
+    text-decoration: underline;
+}
+.btnMenu{
+    margin-right:30px ;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+ul.show{
+    top: 65px;
+}
+
+.menuItems{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+@media screen and (max-width: 48.75em) { /* 780px */
+    .btnMenu{
+        display: inline-flex;
+    }
+    .menuItems{
+        position:fixed;
+        width: 100%;
+        height: calc(100% - 65px);
+        background: #414141;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    /* .menuItems li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    } */
+    /* .menuItems li:hover{
+        background: none;
+    } */
+    /* .menuItems p{
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+    } */
+    /* .menuItems li a:hover{
+        color: #e918b3 ;
+    } */
+    .logo{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:53.125em) { /* 850px */
+    .logo{
+        font-size: 1.7rem;
+    }
+    .font{
+        font-size: 1.7rem;
+    }
+    .logo:hover, .font:hover{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:26.5625em) { /* 425px */
+    .logo{
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    }
+}
+/* .underline:active{
+    background-color: red;
+    transition: .4s;
+} */
+
+/* .menuItems p{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+} */
+
+
+/* .menuItems li{
+    border-radius: 3px;
+    margin: 0 5px;
+} */
+/* .menuItems Link:hover, .underline.active{
+    background-color: rgba(234, 2, 3, .3);
+    transition: .4s;   
+}
+ */
+
+
+
+
+/* @media screen and (max-width: 972px) {
+    
+    .menuItems li a {
+        font-size: 16px;
+    }
+    .menu{
+        width: 100%;
+    }
+} */
+/* @media screen and(max-width: 850px) {
+    .menu{
+        background-color: #000;
+    }
+} */

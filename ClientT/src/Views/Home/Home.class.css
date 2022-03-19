@@ -1,0 +1,160 @@
+.containerMain{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50rem;
+    position: absolute;
+    z-index: -1;
+}
+.containerSection{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem;
+}
+.containerSections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90vh;
+    margin-top: 3rem;
+    padding-top: 3rem ;
+}
+.containerLeft{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 40rem;
+}
+.containerRight{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40rem;
+    width: 50%;
+    margin-bottom: 4rem;
+    overflow: hidden;
+    padding: 2rem;
+}
+.title{
+    font-size: 4rem;
+    color: #000;
+    margin-bottom: 5rem;
+    animation: translationText 7s ease-in-out 500ms ;
+}
+.title:hover{
+    text-shadow: 0 0 15px #FF7272;
+    transition: text-shadow 1s ease-in-out;
+}
+.description{
+    font-size: 2rem;
+    color: aliceblue;
+    text-shadow: 0 0 5px #34aa89;
+}
+.containerImg{
+    width: 80%;
+    height: 80%;
+    animation: rorateImg 7s ease-in-out 500ms infinite;
+}
+.backgroundImg{
+    max-width: 80%;
+    height: 80%;
+    /* background-image: url('../../Images/nintendo-gc4fe13be1_640.png'); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h2{
+    float: left;
+    color: #fff;
+    position: relative;
+}
+h2 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #121212;
+    border-left: 1px solid #fff ;
+    animation: maquina 2s infinite alternate steps(7);
+}
+
+@keyframes maquina {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+/* -------------------->>> MEDIA QUERIES <<------------------------- */
+
+@media screen and (max-width: 48.75em) {
+    .containerSections{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 3rem 0 ;
+        padding: 2rem 0;
+        width: 90%;
+        height: auto;
+    }
+    .containerLeft{
+        width: 90%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .containerRight{
+        width: 90%;
+        height: 30rem;
+        margin: 0 auto;
+    }
+    .containerImg{
+        width: 100%;
+        height: 100%;
+        animation: rorateImg 7s ease-in-out 500ms infinite;
+    }
+    .backgroundImg{
+        width: 100%;
+        height: 30rem;
+        /* background-image: url('../../Images/nintendo-gc4fe13be1_640.png'); */
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .title{
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        font-size: 3.8rem;
+        text-shadow: 0 0 15px #2ee34a, 0 0 20px #2ee34a;
+    }
+    .description{
+        font-size: 2rem;
+        color: aliceblue;
+        text-shadow: 0 0 5px #34aa89;
+    }
+
+}
+@keyframes rorateImg {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@keyframes translationText {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  *,*::after, *::before{
+    box-sizing: inherit;
+  }
+  html{
+    font-size: 62.5%;
+  }
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
